@@ -62,16 +62,16 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Farhan\n'
-            + 'ORG:Owner FXC7;\n'
+            + 'FN:Icaro\n'
+            + 'ORG:Harry;\n'
             + 'TEL;type=CELL;type=VOICE;waid=557996096237:+55 79 9609-6237\n'
             + 'END:VCARD'
 
 prefix = "["
 name = "~ BOT SULISTA"
-rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN IRIENEBOT😁"
-rmenu = "HAI TEMEN IRIENEBOT👋 JANGAN LUPA DONASI YAA:)"
-botinfo = "UNTUK INVITE BOT SILAHKAN DONASI DULU YAA:)"
+rdaftar = "OBRIGADO POR SE REGISTRAR NO BOT SULISTA😁"
+rmenu = "OLÁ AMIGUES:)"
+botinfo = ":)"
 limitt = 10
 memberLimit = 2
 ban = []
@@ -85,7 +85,7 @@ function kyun(seconds){
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
 
-  return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
+  return `${pad(hours)} Hora ${pad(minutes)} Minutos ${pad(seconds)} Segundos`
 }
 
 
@@ -119,7 +119,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*`
+				teks = `Olá, @${num.split('@')[0]}\nBem Vinde ao Grupo *${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				frhan.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -129,7 +129,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Sayonara @${num.split('@')[0]} IRENE MISS YOU:D`
+				teks = `Mais um foi pra puta que pariu, Tchau @${num.split('@')[0]}`
 				let buff = await getBuffer(ppimg)
 				frhan.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -181,22 +181,22 @@ async function starts() {
 			
 
 			mess = {
-				wait: '*⏳ ᴡᴀɪᴛ ꜱᴇᴅᴀɴɢ ᴅɪ ᴩʀᴏꜱᴇꜱ...*',
-				success: '*ꜱᴜᴋꜱᴇꜱ...*',
+				wait: '*⏳ AGUARDE EM PROCESSO...*',
+				success: '*SUCESSO...*',
 				error: {
-					stick: ' *ɢᴀɢᴀʟ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴋᴏɴᴠᴇʀꜱɪ ɢᴀᴍʙᴀʀ ᴋᴇ ꜱᴛɪᴄᴋᴇʀ*',
-					Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
+					stick: ' *Falha, ocorreu um erro ao converter a imagem em um adesivo*',
+					Iv: '*Link inválido*'
 				},
 				only: {
-					group: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅᴀʟᴀᴍ ɢʀᴏᴜᴩ!*',
-					benned: '*ᴍᴀᴀꜰ ɴᴏᴍᴇʀ ᴋᴀᴍᴜ ᴋᴇ ʙᴀɴɴᴇᴅ ꜱɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴀɢᴀʀ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ ᴀɴᴅᴀ*',
-					ownerG: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ɢʀᴏᴜᴩ!*',
-					ownerB: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ʙᴏᴛ!* ',
-					premium: '*ᴍᴀᴀꜰ ꜰɪᴛᴜʀ ɪɴɪ ᴋʜᴜꜱᴜꜱ ᴜꜱᴇʀ ᴩʀᴇᴍɪᴜᴍ!!*',
-					userB: `Hai Kak ${pushname2} Kamu Belom Terdaftar Didatabase Silahkan Ketik \n${prefix}daftar`,
-					admin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴩ!*',
-					Badmin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ!*',
-					publikG: `*ᴍᴀᴀꜰ ʙᴏᴛ ꜱᴇᴋᴀʀᴀɴɢ ꜱᴜᴅᴀʜ ᴅɪᴩʀɪᴠᴀᴛᴇ ᴏʟᴇʜ ᴏᴡɴᴇʀ*\n*ᴜɴᴛᴜᴋ ʟᴇʙɪʜ ᴊᴇʟᴀꜱɴyᴀ ᴋᴇᴛɪᴋ*\n*${prefix}infobot*`
+					group: '*Este comando só pode ser usado em grupos!*',
+					benned: '*Desculpe, você foi banido, entre em contato com o proprietário para tirar seu ban*',
+					ownerG: '*Este comando so pode ser usado pelo dono do grupo!*',
+					ownerB: '*Este comando só pode ser usado pelo Proprietário!* ',
+					premium: '*Desculpe, este recurso é apenas para usuários que o proprietário adicionou!!*',
+					userB: `Oii ${pushname2} Você não está registrado. Digite\n${prefix}daftar`,
+					admin: '*Desculpe, este comando só pode ser usado por administradores do grupo!*',
+					Badmin: '*Desculpe, este comando só pode ser usado quando o bot é admin!*',
+					publikG: `*Desculpe, o bot está privado pelo proprietário*\n*Para mais detalhes, digite*\n*${prefix}infobot*`
 				}
 			}
 
@@ -265,7 +265,7 @@ async function starts() {
 				try {
 					const getmemex = groupMembers.length
 					    if (getmemex <= memberLimit) {
-					    frhan.sendMessage(from, `Maaf ${name} Tidak Bisa Masuk Group Karna Member Group ${groupMetadata.subject} Tidak Memenuhi Limit Member\n\nMinimal Member ${memberLimit}`, text)
+					    frhan.sendMessage(from, `Desculpa ${name} Não é possível entrar no grupo por causa dos membros do grupo ${groupMetadata.subject} Limite de membro não cumprido\n\nmínimo de membros  ${memberLimit}`, text)
                             frhan.groupLeave(from)
 					    }
 		       } catch (err) { console.error(err)  }
@@ -308,17 +308,17 @@ async function starts() {
        if (messagesLink.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		if (isGroupAdmins) return reply(`${pushname2} O seu administrador de grupo não ficará surpreso?`)
 		frhan.updatePresence(from, Presence.composing)
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
-		reply('byee👋')
+		reply('Tchau👋')
 		}, 1100)
 		setTimeout( () => {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
 		setTimeout( () => {
-		reply(`Link Group Terdeteksi maaf *${pushname2}* anda akan di kick`)
+		reply(`Link de grupo detectado *${pushname2}* você vai ser banido`)
 		}, 0)
 		}
 
@@ -334,7 +334,7 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return reply('Pilih themenya gan, 1 - 162\n\nContoh Penggunaan: !tp/1/Farhan')
+				if (args.length < 1) return reply('Escolha o tema, mano, 1 - 162\n\nExemplos de uso: !tp/1/bot')
 				textpro = body.slice(4)
 				txtpro1 = textpro.split("/")[0];
 				txtpro2 = textpro.split("/")[1];
@@ -347,7 +347,7 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return reply('Pilih themenya gan, 1 - 162\n\nContoh Penggunaan: !tp/1/Farhan')
+				if (args.length < 1) return reply('Escolha o tema, mano, 1 - 162\n\nExemplos de uso: !tp/1/bot')
 				textpro = body.slice(4)
 				txtpro1 = textpro.split("/")[0];
 				txtpro2 = textpro.split("/")[1];
@@ -364,7 +364,7 @@ async function starts() {
 					brainly(`${brien}`).then(res => {
 					teks = '❉───────────────────────❉\n'
 					for (let Y of res.data) {
-						teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉───────────────────────❉\n`
+						teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pergunta:* ${Y.pertanyaan}\n\n*➸ Resposta:* ${Y.jawaban[0].text}\n❉───────────────────────❉\n`
 					}
 					frhan.sendMessage(from, teks, text, {quoted: mek, detectLinks: false})
                         console.log(res)
@@ -373,7 +373,7 @@ async function starts() {
 				break 
 		case 'daftar':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
+					if (isUser) return reply('Você já é amigo do BOT SULISTA:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -382,7 +382,7 @@ async function starts() {
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `╭─「 *PENDAFTARAN USER* 」\`\`\`\n│ Pendaftaran berhasil dengan SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nama]: ${pushname2}\`\`\`\n│\`\`\`[Nomor]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Untuk menggunakan bot\`\`\`\n│\`\`\`silahkan\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total Pengguna: ${user.length} Orang\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *REGISTRO DE USUÁRIO* 」\`\`\`\n│ O registro foi bem sucedido com SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`sobre ${date} ${time}\`\`\`\n│\`\`\`[Nome]: ${pushname2}\`\`\`\n│\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`Por favor\`\`\`\n│\`\`\`digite ${prefix}help/menu\`\`\`\n│\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					frhan.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break 
@@ -393,8 +393,8 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				uptime = process.uptime()
 				user.push(sender)
-				myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-                myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum at','Sabtu'];
+				myMonths = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+                myDays = ['Domigo','Segunda-feira','Terça','Quarta feira','Quinta-feira','Sexta-feira','Sábado'];
                 var tgl = new Date();
                 var day = tgl.getDate()
                   bulan = tgl.getMonth()
@@ -418,7 +418,7 @@ async function starts() {
 					} catch {
 					profil = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					 profile = `╭─「 *PROFILE ANDA* 」\n│• *Name:* ${pushname2}\n│• *User Terdaftar:* ✅\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰─────────────────────`
+					 profile = `╭─「 *SEU PERFIL* 」\n│• *Nome:* ${pushname2}\n│• *Usuário Registrado:* ✅\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰─────────────────────`
 					buff = await getBuffer(profil)
 					frhan.sendMessage(from, buff, image, {quoted: mek, caption: profile})
 					break
@@ -429,15 +429,11 @@ async function starts() {
 				if (!isPublic) return reply(mess.only.publikG)
 				frhan.sendMessage(from, bahasa(prefix), text, {quoted: mek})
 				break 
-				case 'donasi':
-				case 'donate':
-					frhan.sendMessage(from, donasi(name), text, {quoted: mek})
-					break
 				case 'info':
 					me = frhan.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : @${ownerNumber}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n\n➽ *Total Pengguna* : ${user.length} User\n➽ *Instagram* : https://www.instagram.com/_farhan_xcode7\n➽ *Special Thanks To* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Monurios`
+					teks = `➽ *Nome do Bot* : ${me.name}\n➽ *Proprietário do Bot* : @${ownerNumber}\n➽ *prefixo* : | ${prefix} |\n➽ *Contatos Bloqueados* : ${blocked.length}\n➽ *Ativo Desde* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					frhan.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break 
@@ -452,11 +448,11 @@ async function starts() {
 						no += 1
 						teks += `[${no.toString()}] @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total Pengguna : ${user.length}\n╰──────⎿ *${name}* ⏋────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────⎿ *${name}* ⏋────`
 					frhan.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'blocklist':
-					teks = 'List Block :\n'
+					teks = 'Lista de Bloqueio :\n'
 					for (let block of blocked) {
 						teks += `~> @${block.split('@')[0]}\n`
 					}
@@ -464,7 +460,7 @@ async function starts() {
 					frhan.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					break 
 				case 'banlist':
-				ben = '```List Banned``` :\n'
+				ben = '```Lista de Banidod``` :\n'
 					for (let banned of ban) {
 						ben += `~> @${banned.split('@')[0]}\n`
 					}
@@ -490,7 +486,7 @@ async function starts() {
 					if (!isOwner) return reply(mess.only.ownerB)
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 			        ban = mentioned
-					reply(`berhasil banned : ${ban}`)
+					reply(`banido com sucesso : ${ban}`)
 					break
 				case 'addprem':
 					frhan.updatePresence(from, Presence.composing)
@@ -498,26 +494,26 @@ async function starts() {
 					if (!isOwner) return reply(mess.only.ownerB)
 					addpremium = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					premium = addpremium
-					reply(`*Berhasil Menambahkan ${premium} Ke database User Premium*`)
+					reply(`*Sucesso adicionado ${premium} Para o banco de dados do Usuário Premium*`)
 					break
 				case 'removeprem':
 					if (!isOwner) return reply(mess.only.ownerB)
 					rprem = body.slice(13)
 					premium.splice(`${rprem}@s.whatsapp.net`, 1)
-					reply(`Berhasil Remove wa.me/${rprem} Dari User Premium`)
+					reply(`Removido com sucesso wa.me/${rprem} De um usuário premium`)
 					break
 				case 'unban':
 					if (!isOwner)return reply(mess.only.ownerB)
 					bnnd = body.slice(8)
 					ban.splice(`${bnnd}@s.whatsapp.net`, 1)
-					reply(`Nomor wa.me/${bnnd} telah di unban!`)
+					reply(`Número wa.me/${bnnd} foi desbanido!`)
 					break
 				case 'block':
 				 frhan.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					frhan.blockUser (`${body.slice(7)}@c.us`, "add")
-					frhan.sendMessage(from, `perintah Diterima, memblokir ${body.slice(7)}@c.us`, text)
+					frhan.sendMessage(from, `Pedidos recebidos, bloquear ${body.slice(7)}@c.us`, text)
 					break
 				case 'unblock':
                     if (isBanned) return reply(mess.only.benned)    
@@ -526,12 +522,12 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 				    frhan.blockUser (`${body.slice(9)}@c.us`, "remove")
-					frhan.sendMessage(from, `perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
+					frhan.sendMessage(from, `Pedidos recebidos, desbloquear ${body.slice(9)}@c.us`, text)
 				    break 
 				case 'readmore':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (args.length < 1) return reply('teks nya mana om?')
+					if (args.length < 1) return reply('cadê o texto, tio?')
 					var kls = body.slice(9)
 					var has = kls.split("/")[0];
 					var kas = kls.split("/")[1];
@@ -542,7 +538,7 @@ async function starts() {
 				if (!isOwner) return reply(mess.only.ownerB)
 				  var obj = []
 				   fs.writeFileSync('./database/json/limit.json', JSON.stringify(obj))
-				  await reply(`LIMIT BERHASIL DI RESET`)
+				  await reply(`LIMITE RESETADO`)
 				break
 					case 'limit':
 				var found = false
@@ -550,8 +546,8 @@ async function starts() {
                     for (let lmt of limidat) {
                         if (lmt.id === sender) {
                             let limitCounts = limitt - lmt.limit
-                            if (limitCounts <= 0) return reply(from,`Limit anda habis`, id)
-                            await reply(`*LIMIT ANDA TINGGAL: ${limitCounts}*`)
+                            if (limitCounts <= 0) return reply(from,`Seu limite subiu`, id)
+                            await reply(`*LIMITE: ${limitCounts}*`)
                             found = true
                         }
                     }
@@ -559,7 +555,7 @@ async function starts() {
                         let obj = { id : sender, limit : 1 }
                         limit.push(obj);
                         fs.writeFileSync('./database/json/limit.json', JSON.stringify(limit, 1));
-                        await reply(`LIMIT ANDA ${limitCounts}`)
+                        await reply(`SEU LIMITE ${limitCounts}`)
                     }
 					break
 				case 'ocr':
@@ -577,7 +573,7 @@ async function starts() {
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('Foto aja gan Jangan Video')
+						reply('Só fotos cara, não vídeos')
 					}
 					await limitAdd(sender) 
 					break 
@@ -625,7 +621,7 @@ async function starts() {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`\`\`\`Gagal, pada saat mengkonversi ${tipe} ke stiker\`\`\``)
+								reply(`\`\`\`Falhou, no momento da conversão ${tipe} para o adesivo\`\`\``)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -658,7 +654,7 @@ async function starts() {
 							})
 						})
 					} else {
-						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+						reply(`Envie fotos com legendas ${prefix}sticker ou marque imagens que já foram enviadas, duração do vídeo 9s, se falhar tente repetir`)
 					}
 					await limitAdd(sender) 
 					break 
@@ -685,7 +681,7 @@ async function starts() {
 					fs.unlinkSync(rano)
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('Use uma foto!')
 					}
 					await limitAdd(sender) 
 					break
@@ -701,7 +697,7 @@ async function starts() {
             var imgbb = require('imgbb-uploader')
             imgbb('727e7e43f6cda1dfb85d888522fd4ce1', media)
                 .then(data => {
-                    var caps = `「 *IMAGE TO URL* 」\n\n*╠➥  ID :* ${data.id}\n*╠➥  MimeType :* ${data.image.mime}\n*╠➥  Extension :* ${data.image.extension}\n\n*╠➥  URL :* ${data.display_url}`
+                    var caps = `「 *IMAGEM PARA URL* 」\n\n*╠➥  ID :* ${data.id}\n*╠➥  Tipo MIME :* ${data.image.mime}\n*╠➥  Extensão :* ${data.image.extension}\n\n*╠➥  URL :* ${data.display_url}`
                     ibb = fs.readFileSync(media)
                      frhan.sendMessage(from, ibb, image, { quoted: mek, caption: caps })
                 })
@@ -716,7 +712,7 @@ async function starts() {
 				   if (!isUser) return reply(mess.only.userB)
 				   if (!isPublic) return reply(mess.only.publikG)
 				   if (isLimit(sender)) return reply(limitend(pushname2))
-				     if (args.length < 1) return reply(`[❗] Kirim perintah *${prefix}kalkulator [ Angka ]*\nContoh : ${prefix}kalkulator 12*12\n*NOTE* :\n- Untuk Perkalian Menggunakan *\n- Untuk Pertambahan Menggunakan +\n- Untuk Pengurangan Mennggunakan -\n- Untuk Pembagian Menggunakan /`)
+				     if (args.length < 1) return reply(`[❗] Enviar *${prefix}kalkulator [ Números ]*\nExemplo : ${prefix}kalkulator 12*12\n*NOTA* :\n- Para multiplicação usando *\n- Para maior uso +\n- Para redução de uso -\n- Para compartilhar usando /`)
 				    mtk = `${body.slice(12)}`
 				    anu = await fetchJson(`https://api.vhtear.com/calculator?value=${mtk}&apikey=${VthearApi}`, {method: 'get'})
 				    frhan.sendMessage(from, `*${anu.result.data}*`, text, {quoted: mek})
@@ -724,13 +720,13 @@ async function starts() {
 				    break 
 				case 'owner':
                  frhan.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 frhan.sendMessage(from, 'Jika Mau Save Chat Aja Gan Ntar Disave Back:)',text, { quoted: mek} )
+                 frhan.sendMessage(from, 'contato :)',text, { quoted: mek} )
                  break
                 case 'fitnah':
                  if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
                  if (!isPublic) return reply(mess.only.publikG)
-				if (args.length < 1) return reply(`Usage :\n${prefix}fitnah [@tag/pesan/balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember/hai/hai juga`)
+				if (args.length < 1) return reply(`Uso :\n${prefix}fitnah [@tag/msg/msg do bot]]\n\nEx : \n${prefix}fitnah @tagmembro/olá/olá fdp`)
 				var gh = body.slice(8)
 				mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					var replace = gh.split("/")[0];
@@ -755,7 +751,7 @@ async function starts() {
 					}
                 reply(mess.wait) // leave empty to get your own
 			    buffer = await getBuffer(ppUrl)
-		        frhan.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
+		        frhan.sendMessage(from, buffer, image, {quoted: mek, caption: `*NOME* : ${groupName}\n*MEMBROS* : ${groupMembers.length}\n*ADMINS* : ${groupAdmins.length}\n*DESC* : ${groupDesc}`})
                 break
 				case 'trendtwit':
 					frhan.updatePresence(from, Presence.composing) 
@@ -766,20 +762,20 @@ async function starts() {
 					reply(mess.wait)
 					teks = '=================\n'
 					for (let i of data.result) {
-						teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
+						teks += `*Hashtag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
 					}
 					reply(teks.trim())
 					await limitAdd(sender) 
 					break 
 				case 'testime':
 					setTimeout( () => {
-					frhan.sendMessage(from, 'Waktu habis:v', text, {quoted: mek}) // ur cods
+					frhan.sendMessage(from, 'O tempo acabou:v', text, {quoted: mek}) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					frhan.sendMessage(from, '5 Detik lagi', text, {quoted: mek}) // ur cods
+					frhan.sendMessage(from, 'Mais 5 segundos', text, {quoted: mek}) // ur cods
 					}, 5000) // 1000 = 1s,
 					setTimeout( () => {
-					frhan.sendMessage(from, '10 Detik lagi', text, {quoted: mek}) // ur cods
+					frhan.sendMessage(from, '10 segundos para ir', text, {quoted: mek}) // ur cods
 					}, 0) // 1000 = 1s,
 					break 
 				case 'animecry':
@@ -811,7 +807,7 @@ async function starts() {
                     reply(mess.wait)
 					teks = '#############################\n'
 					for (let i of data.result) {
-						teks += `*Title* : ${i.title}\n*link* : ${i.link}\n\n : ${i.desk}\n###########################\n`
+						teks += `*Título* : ${i.title}\n*link* : ${i.link}\n\n : ${i.desk}\n###########################\n`
 					}
 					reply(teks.trim())
 					await limitAdd(sender) 
@@ -845,7 +841,7 @@ async function starts() {
 				    if (!isGroup) return reply(mess.only.group)
 				    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				    linkgc = await frhan.groupInviteCode (from)
-				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
+				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink do Grupo *${groupName}*`
 				    frhan.sendMessage(from, yeh, text, {quoted: mek})
 			        break
 				case 'hidetag':
@@ -876,7 +872,7 @@ async function starts() {
 					ganteng = body.slice(12)
 					const gan =['10%','30%','20%','40%','50%','60%','70%','62%','74%','83%','97%','100%','29%','94%','75%','82%','41%','39%']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
-					frhan.sendMessage(from, 'Pertanyaan : Cek Ganteng Bang *'+ganteng+'*\n\nJawaban : '+ teng +'', text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : Verificar Handsome Bang *'+ganteng+'*\n\nResposta : '+ teng +'', text, { quoted: mek })
 					break
 				case 'cantikcek':
 				case 'cekcantik':
@@ -884,16 +880,16 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 					cantik = body.slice(11)
-					if (args.length < 1) return reply('Yg Mau dicek Siapa Kak??')
-					const can =['10% banyak" perawatan ya kak:v\nCanda Perawatan:v','30% Semangat Kaka Merawat Dirinya><','20% Semangat Ya Kaka👍','40% Wahh Kaka><','50% kaka cantik deh><','60% Hai Cantik🐊','70% Hai Ukhty🐊','62% Kakak Cantik><','74% Kakak ni cantik deh><','83% Love You Kakak><','97% Assalamualaikum Ukhty🐊','100% Kakak Pake Susuk ya??:v','29% Semangat Kakak:)','94% Hai Cantik><','75% Hai Kakak Cantik','82% wihh Kakak Pasti Sering Perawatan kan??','41% Semangat:)','39% Lebih Semangat🐊']
+					if (args.length < 1) return reply('Quem quer verificar??')
+					const can =['10% Grande quantidade kaka" manutenção mano:v\nCuidado com as piadas:v','30% O espírito do irmão cuida de si mesmo><','20% tá bom irmão👍','40% Uau irmão><','50% linda irmã><','60% Ei linda🐊','70% eita🐊','62% Você é linda irmã><','74% ual mt linda kaka><','83% Te amo irmão><','97% mo lindão🐊','100% Irmão usa implante hein??:v','29% Guarde o espirito irmão kkaka:)','94% Ei linda><','75% Oi linda','82% irmão tu deve se cuidar bem hein??','41% :)','39% ksksks🐊']
 					const tik = can[Math.floor(Math.random() * can.length)]
-					frhan.sendMessage(from, 'Pertanyaan : Cantik Cek Kakak *'+cantik+'*\n\nPersen Kecantikan : '+ tik +'', text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : Lindo cheque irmão *'+cantik+'*\n\nBeleza percentual : '+ tik +'', text, { quoted: mek })
 					break
 				  case 'ownergrup':
 				  case 'ownergroup':
                frhan.updatePresence(from, Presence.composing) 
               options = {
-          text: `Owner Group ini adalah : wa.me/${from.split("-")[0]}`,
+          text: `Proprietário do grupo é : wa.me/${from.split("-")[0]}`,
           contextInfo: { mentionedJid: [from] }
            }
            frhan.sendMessage(from, options, text, { quoted: mek } )
@@ -901,7 +897,7 @@ async function starts() {
 				case 'leave': 
 				    if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
-			    	anu = await frhan.groupLeave(from, `Bye All Member *${groupMetadata.subject}*`, groupId)
+			    	anu = await frhan.groupLeave(from, `Tchau membros *${groupMetadata.subject}*`, groupId)
 	                break
 				case 'setname':
 				if (isBanned) return reply(mess.only.benned)    
@@ -911,7 +907,7 @@ async function starts() {
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                 frhan.groupUpdateSubject(from, `${body.slice(9)}`)
-                frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Nama Group Menjadi\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
+                frhan.sendMessage(from, `\`\`\`✓Alteração do nome do grupo para\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
                 break
                 case 'setdesc':
                 if (isBanned) return reply(mess.only.benned)    
@@ -921,21 +917,21 @@ async function starts() {
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                 frhan.groupUpdateDescription(from, `${body.slice(9)}`)
-                frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Deskripsi Group\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, {quoted: mek})
+                frhan.sendMessage(from, `\`\`\`✓Alteração da descrição do grupo com sucesso para\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, {quoted: mek})
                 break
 				case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return frhan.sendMessage(from, 'Kode bahasanya mana gan?\n Kalo Gatau Kode Bahasanya Apa Aja Ketik Saja *${prefix}bahasa*', text, {quoted: mek})
+					if (args.length < 1) return frhan.sendMessage(from, 'Qual código de idioma, mano?\n Se você não sabe o código do idioma, basta digitar *${prefix}bahasa*', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return frhan.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
+					if (args.length < 2) return frhan.sendMessage(from, 'Onde está o texto??', text, {quoted: mek})
 					dtt = body.slice(9)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 600
-					? reply('Textnya kebanyakan gan')
+					? reply('O texto é longo mano')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -954,14 +950,14 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				    if (args.length < 1) return frhan.sendMessage(from, 'Kode Bahasanya???', text, {quoted: mek})
-				    if (args.length < 2) return frhan.sendMessage(from, 'Text Yg Mau Di translate??', text, {quoted: mek})
+				    if (args.length < 1) return frhan.sendMessage(from, 'Código da Língua???', text, {quoted: mek})
+				    if (args.length < 2) return frhan.sendMessage(from, 'Texto que você deseja traduzir??', text, {quoted: mek})
 				    ts = body.slice(11)
 				    kode = ts.split("/")[0]
 				    teks = ts.split("/")[1]
 				    anu = await fetchJson(`https://api.arugaz.my.id/api/edu/translate?lang=${kode}&text=${teks}`)
 				    reply(mess.wait)
-				    translate = `Text Asli: *${body.slice(11)}*\n\nHasil: *${anu.text}*`
+				    translate = `Texto original: *${body.slice(11)}*\n\nResultado: *${anu.text}*`
 				    frhan.sendMessage(from, translate, text, {quoted: mek})
 				   await limitAdd(sender)
 				   break 
@@ -970,14 +966,14 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				    if (args.length < 1) return frhan.sendMessage(from, 'Kode Bahasanya???', text, {quoted: mek})
-				    if (args.length < 2) return frhan.sendMessage(from, 'Text Yg Mau Di translate??', text, {quoted: mek})
+				    if (args.length < 1) return frhan.sendMessage(from, 'Código da Língua???', text, {quoted: mek})
+				    if (args.length < 2) return frhan.sendMessage(from, 'Texto que você deseja traduzir??', text, {quoted: mek})
 				    ts = body.slice(4)
 				    kode = ts.split("/")[0]
 				    teks = ts.split("/")[1]
 				    anu = await fetchJson(`https://api.arugaz.my.id/api/edu/translate?lang=${kode}&text=${teks}`)
 				    reply(mess.wait)
-				    ts = `Text Asli: *${body.slice(7)}*\n\nHasil: *${anu.text}*`
+				    ts = `Texto original: *${body.slice(7)}*\n\nResultado: *${anu.text}*`
 				    frhan.sendMessage(from, ts, text, {quoted: mek})
 				   await limitAdd(sender)
 				   break 
@@ -991,16 +987,16 @@ async function starts() {
                     media = await frhan.downloadAndSaveMediaMessage(mek)
                     await frhan.updateProfilePicture (from, media)
                     reply(mess.wait)
-                    reply(`\`\`\`✓Sukses Mengganti Profil Group\`\`\` *${groupMetadata.subject}*`)
+                    reply(`\`\`\`✓Alteração do perfil do grupo com sucesso\`\`\` *${groupMetadata.subject}*`)
                     break
                 case 'apakah':
                 if (isBanned) return reply(mess.only.benned)    
                 if (!isUser) return reply(mess.only.userB)
                 if (!isPublic) return reply(mess.only.publikG)
 					apakah = body.slice(1)
-					const apakahh = ["Ya","Tidak","Ga tau"]
+					const apakahh = ["sim","Não","Claro"]
 					const kah = apakahh[Math.floor(Math.random() * apakahh.length)]
-					frhan.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : *'+apakah+'*\n\nResposta : '+ kah, text, { quoted: mek })
 					break 
 				case 'rate':
 				if (isBanned) return reply(mess.only.benned)    
@@ -1009,43 +1005,43 @@ async function starts() {
 					rate = body.slice(1)
 					ratee = ["100%","95%","90%","85%","80%","75%","70%","65%","60%","55%","50%","45%","40%","35%","30%","25%","20%","15%","10%","5%"]
 					const te = ratee[Math.floor(Math.random() * ratee.length)]
-					frhan.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'', text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : *'+rate+'*\n\nResposta : '+ te+'', text, { quoted: mek })
 					break 
 				case 'watak':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 					watak = body.slice(1)
-					wa =["penyayang","pemurah","Pemarah","Pemaaf","Penurut","Baik","baperan","Baik Hati","penyabar","Uwu","top deh, pokoknya","Suka Membantu"]
+					wa =["compassivo","generoso","Mal humorado","Perdoando","Obediente","Boa","Feio","Bom coração","paciente","Uwu","top em, basicamente","Gostaria de ajudar"]
 					const tak = wa[Math.floor(Math.random() * wa.length)]
-					frhan.sendMessage(from, 'Pertanyaan : *'+watak+'*\n\nJawaban : '+ tak, text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : *'+watak+'*\n\nResposta : '+ tak, text, { quoted: mek })
 					break 
 				case 'hobby':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 					hobby = body.slice(1)
-					hob =["Memasak","Membantu Atok","Mabar","Nobar","Sosmed an","Membantu Orang lain","Nonton Anime","Nonton Drakor","Naik Motor","Nyanyi","Menari","Bertumbuk","Menggambar","Foto fotoan Ga jelas","Maen Game","Berbicara Sendiri"]
+					hob =["Cozinhando","Ajuda as pessoas","Mabar","Nobar","Media social","Ajudando os Outros","Assistindo anime","Assistindo Drakor","Dirigindo uma moto","Cantando","Dançando","Brigando","Desenhando","As fotos não são claras","Jogando","Falando sozinho"]
 					const by = hob[Math.floor(Math.random() * hob.length)]
-					frhan.sendMessage(from, 'Pertanyaan : *'+hobby+'*\n\nJawaban : '+ by, text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : *'+hobby+'*\n\nResposta : '+ by, text, { quoted: mek })
 					break 
 				case 'bisakah':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 					bisakah = body.slice(1)
-					const bisakahh = ["Bisa","Tidak Bisa","Ga tau"]
+					const bisakahh = ["lata","Não pode","Não sei"]
 					const keh = bisakahh[Math.floor(Math.random() * bisakahh.length)]
-					frhan.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : *'+bisakah+'*\n\nResposta : '+ keh, text, { quoted: mek })
 					break 
 				case 'kapankah':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 					kapankah = body.slice(1)
-					const kapankahh = ["1 Minggu lagi","1 Bulan lagi","1 Tahun lagi","100 tahun lagi","gatau","2030","1 Jam lagi","1 Menit lagi"]
+					const kapankahh = ["Falta 1 semana","Falta 1 mês","Falta 1 ano","Mais 100 anos","não sei","2030","Mais 1 hora","Falta 1 minuto"]
 					const koh = kapankahh[Math.floor(Math.random() * kapankahh.length)]
-					frhan.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
+					frhan.sendMessage(from, 'Pergunta : *'+kapankah+'*\n\nResposta : '+ koh, text, { quoted: mek })
 					break 
 				case 'truth':
 				if (isBanned) return reply(mess.only.benned)    
