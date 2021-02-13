@@ -21,6 +21,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │
 ╭──「 *SOBRE ${name}* 」
 │➻ *${prefix}report <reportar erro>*
+│➻ *${prefix}info*
 │➻ *${prefix}speed*
 │➻ *${prefix}daftar*
 │➻ *${prefix}banlist*
