@@ -62,8 +62,8 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Icaro\n'
-            + 'ORG:Harry;\n'
+            + 'FN:❁̸⃪͎۪۪۪〫⃕͘͡⃟💸íℂ⨻ℜ〄•᭄ꦿ⃟꧇۪⃟\n'
+            + 'ORG:Icaro;\n'
             + 'TEL;type=CELL;type=VOICE;waid=557996096237:+55 79 9609-6237\n'
             + 'END:VCARD'
 
@@ -72,7 +72,7 @@ name = "~ BOT SULISTA"
 rdaftar = "OBRIGADO POR SE REGISTRAR NO BOT SULISTA😁"
 rmenu = "OLÁ AMIGUES :)"
 botinfo = ":)"
-limitt = 500
+limitt = 5000
 memberLimit = 5000
 ban = []
 premium = ["557996096237@s.whatsapp.net"]
@@ -308,7 +308,7 @@ async function starts() {
        if (messagesLink.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} O seu administrador de grupo não ficará surpreso?`)
+		if (isGroupAdmins) return reply(`${pushname2} O administrador do grupo não ficará surpreso pelo link de outro grupo?`)
 		frhan.updatePresence(from, Presence.composing)
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
@@ -382,7 +382,7 @@ async function starts() {
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `╭─「 *REGISTRO DE USUÁRIO* 」\`\`\`\n│ O registro foi bem sucedido com SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`sobre ${date} ${time}\`\`\`\n│\`\`\`[Nome]: ${pushname2}\`\`\`\n│\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`Por favor\`\`\`\n│\`\`\`digite ${prefix}help/menu\`\`\`\n│\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *REGISTRO* 」\`\`\`\n│ O registro foi bem sucedido, SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Data ${date} ${time}\`\`\`\n│\`\`\`[Nome]: ${pushname2}\`\`\`\n│\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`Por favor\`\`\`\n│\`\`\`digite ${prefix}help/menu\`\`\`\n│\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					frhan.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break 
@@ -394,7 +394,7 @@ async function starts() {
 				uptime = process.uptime()
 				user.push(sender)
 				myMonths = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
-                myDays = ['Domigo','Segunda-feira','Terça','Quarta feira','Quinta-feira','Sexta-feira','Sábado'];
+                myDays = ['Domigo','Segunda-Feira','Terça','Quarta-Feira','Quinta-Feira','Sexta-Feira','Sábado'];
                 var tgl = new Date();
                 var day = tgl.getDate()
                   bulan = tgl.getMonth()
