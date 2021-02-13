@@ -1,87 +1,87 @@
 [
   {
-    "author": "A. France",
-    "quotes": "Lebih baik mengerti sedikit daripada salah mengerti."
+    "autor": "A. France",
+    "citações": "É melhor entender um pouco do que entender mal."
   },
   {
     "author": "Abraham Lincoln",
-    "quotes": "Hampir semua pria memang mampu bertahan menghadapi kesulitan. Namun, jika Anda ingin menguji karakter sejati pria, beri dia kekuasaan."
+    "quotes": "Quase todos os homens são capazes de resistir à adversidade.  No entanto, se você quiser testar o verdadeiro caráter de um homem, dê-lhe poder."
   },
   {
     "author": "Aeschylus",
-    "quotes": "Bila tekad seseorang kuat dan teguh, Tuhan akan bergabung dalam usahanya."
+    "quotes": "Quando a determinação de uma pessoa é forte e inabalável, Deus se une ao esforço."
   },
   {
     "author": "Aesop",
-    "quotes": "Penderitaan adalah pelajaran."
+    "quotes": "O sofrimento é uma lição."
   },
   {
     "author": "Albert Einstein",
-    "quotes": "Ilmu pengetahuan tanpa agama adalah pincang."
+    "quotes": "Ciência sem religião é coxo."
   },
   {
     "author": "Albert Einstein",
-    "quotes": "Hidup itu seperti sebuah sepeda, agar tetap seimbang kita harus tetap bergerak."
+    "quotes": "A vida é como uma bicicleta, para nos mantermos equilibrados temos que seguir em frente."
   },
   {
     "author": "Albert Einstein",
-    "quotes": "Perbedaan masa lalu, sekarang, dan masa depan tak lebih dari ilusi yang keras kepala."
+    "quotes": "A diferença entre passado, presente e futuro nada mais é do que uma ilusão teimosa."
   },
   {
     "author": "Albert Einstein",
-    "quotes": "Sebuah meja, sebuah kursi, semangkuk buah, dan sebuah biola; apa lagi yang dibutuhkan agar seseorang bisa merasa bahagia?."
+    "quotes": "Uma mesa, uma cadeira, uma tigela de frutas e um violino;  o que mais é necessário para uma pessoa se sentir feliz?"
   },
   {
     "author": "Albert Enstein",
-    "quotes": "Belas kasihanlah terhadap sesama, bersikap keraslah terhadap diri sendiri."
+    "quotes": "Tenha misericórdia dos outros, seja duro contigo mesmo."
   },
   {
     "author": "Alex Osborn",
-    "quotes": "Cara paling baik untuk menggerakkan diri Anda ialah memberi tugas kepada diri sendiri."
+    "quotes": "A melhor maneira de se mover é dando a si mesmo uma tarefa."
   },
   {
     "author": "Alexander A. Bogomoletz",
-    "quotes": "Kita tidak boleh kehilangan semangat. Semangat adalah stimulan terkuat untuk mencintai, berkreasi dan berkeinginan untuk hidup lebih lama."
+    "quotes": "Não devemos desanimar.  A paixão é o mais forte estimulante para o amor, a criação e o desejo de viver mais."
   },
   {
     "author": "Alexander Solzhenitsyn",
-    "quotes": "Manusia akan bahagia selama ia memilih untuk bahagia."
+    "quotes": "Os humanos serão felizes contanto que escolham ser felizes."
   },
   {
     "author": "Ali Javan",
-    "quotes": "Saya tidak berharap menjadi segalanya bagi setiap orang. Saya hanya ingin menjadi sesuatu untuk seseorang."
+    "quotes": "Não espero ser tudo para todos.  Eu só quero ser algo para alguém."
   },
   {
     "author": "Ali bin Abi Thalib",
-    "quotes": "Apabila sempurna akal seseorang, maka sedikit perkataannya."
+    "quotes": "Se o intelecto de alguém é perfeito, então é pouco falado."
   },
   {
     "author": "Ali bin Abi Thalib",
-    "quotes": "Bahagialah orang yang dapat menjadi tuan untuk dirinya, menjadi kusir untuk nafsunya dan menjadi kapten untuk bahtera hidupnya."
+    "quotes": "Bem-aventurado o homem que pode dominar a si mesmo, ser o condutor de seus desejos e o capitão da arca de sua vida."
   },
   {
     "author": "Ali bin Abi Thalib",
-    "quotes": "Sahabat yang jujur lebih besar harganya daripada harta benda yang diwarisi dari nenek moyang."
+    "quotes": "Um amigo honesto vale mais do que uma propriedade herdada de ancestrais."
   },
   {
     "author": "Anne M. Lindbergh",
-    "quotes": "Yang palin melelahkan dalam hidup adalah menjadi orang yang tidak tulus."
+    "quotes": "A coisa mais cansativa na vida é ser uma pessoa insincera."
   },
   {
     "author": "Anonim",
-    "quotes": "Terbuka untuk Anda, begitulah Tuhan memberi kita jalan untuk berusaha. Jangan pernah berfikir jalan sudah tertutup."
+    "quotes": "Aberto para você, é assim que Deus nos dá uma maneira de trabalhar. Nunca pense que a estrada está fechada."
   },
   {
     "author": "Anonim",
-    "quotes": "Penundaan adalah kuburan dimana peluang dikuburkan."
+    "quotes": "O atraso é o túmulo onde a oportunidade está enterrada."
   },
   {
     "author": "Antonie De Saint",
-    "quotes": "Cinta bukan saling menatap mata, namun melihat ke arah yang sama bersama-sama."
+    "quotes": "O amor não é olhar um para o outro, mas olhar na mesma direção juntos."
   },
   {
     "author": "Aristoteles",
-    "quotes": "Kita adalah apa yang kita kerjakan berulang kali. Dengan demikian, kecemerlangan bukan tindakan, tetapi kebiasaan."
+    "quotes": "Nós somos o que fazemos continuamente.  Assim, a excelência não é uma ação, mas um hábito."
   },
   {
     "author": "Arnold Glasow",
@@ -1133,94 +1133,94 @@
   },
   {
     "author": "Virginia Wolf",
-    "quotes": "Jika Anda tak bisa mengatakan hal yang benar dari diri Anda, maka Anda pun tak bisa mengatakan hal yang benar dari orang lain."
+    "quotes": "Se você não pode dizer as coisas certas de si mesmo, também não pode dizer as coisas certas de outras pessoas."
   },
   {
     "author": "W. Camden",
-    "quotes": "Burung yang terbang pagi akan memperoleh cacing paling banyak."
+    "quotes": "Os pássaros que voam de manhã pegam mais vermes."
   },
   {
     "author": "Walt Disney",
-    "quotes": "Cara untuk memulai adalah berhenti berbicara dan mulai lakukan sesuatu."
+    "quotes": "A maneira de começar é parar de falar e começar a fazer algo."
   },
   {
     "author": "Walter Cronkite",
-    "quotes": "Sukses akan lebih permanen jika Anda meraihnya tanpa menghancurkan prinsip-prinsip Anda."
+    "quotes": "O sucesso será mais permanente se você alcançá-lo sem quebrar seus princípios."
   },
   {
     "author": "Warren Buffett",
-    "quotes": "Dari dulu saya selalu yakin saya akan kaya. Saya kira saya tak pernah meragukannya, satu menit pun."
+    "quotes": "Sempre acreditei que seria rico.  Acho que nunca duvidei disso, por um minuto."
   },
   {
     "author": "Whitney Young",
-    "quotes": "Lebih baik menyiapkan diri untuk sebuah peluang dan tidak mendapatkannya daripada punya peluang dan tidak menyiapkan diri."
+    "quotes": "Melhor se preparar para uma oportunidade e não aproveitá-la do que ter a oportunidade e não se preparar."
   },
   {
     "author": "William A. W.",
-    "quotes": "Satu-satunya yang bisa menghalangi kita adalah keyakinan yang salah dan sikap yang negatif."
+    "quotes": "As únicas coisas que podem nos impedir são as crenças erradas e atitudes negativas."
   },
   {
     "author": "William Allen White",
-    "quotes": "Saya tidak takut pada hari esok karena saya sudah melihat hari kemarin dan saya mencintai hari ini."
+    "quotes": "Não tenho medo do amanhã porque vi o ontem e amo o hoje."
   },
   {
     "author": "William Arthur",
-    "quotes": "Guru yang biasa-biasa, berbicara. Guru yang bagus, menerangkan. Guru yang hebat, mendemonstrasikan. Guru yang agung, memberi inspirasi."
+    "quotes": "Professor médio, fale.  Bom professor, explique.  Ótimo professor, demonstrando.  Ótimo professor, inspirador."
   },
   {
     "author": "William F. Halsey",
-    "quotes": "Semua masalah menjadi lebih kecil jika Anda tidak mengelaknya, tapi menghadapinya."
+    "quotes": "Todos os problemas se tornam menores se você não os conhece, mas enfrente-os."
   },
   {
     "author": "William J. Johnston",
-    "quotes": "Perubahan yang paling bermakna dalam hidup adalah perubahan sikap. Sikap yang benar akan menghasilkan tindakan yang benar."
+    "quotes": "A mudança mais significativa na vida é uma mudança de atitude.  A atitude certa produzirá a ação certa."
   },
   {
     "author": "William James",
-    "quotes": "Jika Anda harus membuat pilihan dan Anda tidak melakukannya, itu saja sudah pilihan."
+    "quotes": "Se você tiver que fazer uma escolha e não fizer, isso já é uma escolha."
   },
   {
     "author": "William James",
-    "quotes": "Percaya bahwa hidup itu berharga, dan kepercayaan Anda akan membantu menciptakan hidup yang berharga."
+    "quotes": "Acredite que a vida tem valor e sua confiança ajudará a criar uma vida de valor."
   },
   {
     "author": "William Ralph Inge",
-    "quotes": "Kuatir sama seperti membayar bunga untuk uang yang mungkin tak pernah Anda pinjam."
+    "quotes": "Preocupar-se é como pagar juros sobre um dinheiro que você nunca pode pedir emprestado."
   },
   {
     "author": "William Shakespeare",
-    "quotes": "Jangan sering menyalakan api kebencian terhadap musuhmu, karena nanti akan membakar dirimu sendiri."
+    "quotes": "Não acenda freqüentemente um fogo de ódio contra seu inimigo, porque isso irá queimar você mais tarde."
   },
   {
     "author": "William Shakespeare",
-    "quotes": "Bila kamu jujur kepada dirimu sendiri, bagai siang pasti berganti malam, kamu takkan pernah berdusta kepada orang lain."
+    "quotes": "Se você for honesto consigo mesmo, como se o dia se transformasse em noite, você nunca mentirá para outras pessoas."
   },
   {
     "author": "William Shakespeare",
-    "quotes": "Kutu yang berani adalah kutu yang bisa berani mendapatkan sarapannya pada bibir seekor singa."
+    "quotes": "Uma pulga corajosa é aquela que pode ousar tomar seu café da manhã nos lábios de um leão."
   },
   {
     "author": "Winston Churchill",
-    "quotes": "Kita menyambung hidup dengan apa yang kita peroleh, tapi kita menghadirkan kehidupkan dengan apa yang kita berikan."
+    "quotes": "Nós ganhamos a vida com o que recebemos, mas damos vida ao que damos."
   },
   {
     "author": "Wolfgang von Gothe",
-    "quotes": "Pengetahuan tidaklah cukup, kita harus mengamalkannya. Niat tidak cukup, kita harus melakukannya."
+    "quotes": "O conhecimento não é suficiente, temos que praticá-lo.  A intenção não é suficiente, temos que fazê-lo."
   },
   {
     "author": "Zachary Scott",
-    "quotes": "Ketika Anda bertambah tua, Anda akan menemukan satu-satunya hal yang Anda sesali adalah hal-hal yang tidak Anda lakukan."
+    "quotes": "Conforme você envelhece, você descobrirá que as únicas coisas de que se arrependerá são as coisas que não fez."
   },
   {
     "author": "Zig Zaglar",
-    "quotes": "Batu fondasi untuk sukses yang seimbang adalah kejujuran, watak, integritas, iman, cinta dan kesetiaan."
+    "quotes": "As pedras fundamentais para o sucesso equilibrado são honestidade, caráter, integridade, fé, amor e lealdade."
   },
   {
     "author": "Zig Zaglar",
-    "quotes": "Kebanyakan orang gagal meraih cita-citanya bukan karena mereka tidak mampu, tetapi karena tidak berkomitmen."
+    "quotes": "A maioria das pessoas falha em atingir seus objetivos não porque seja incapaz, mas porque não está comprometida."
   },
   {
     "author": "Zig Zaglar",
-    "quotes": "Kita tidak harus hebat saat memulai, tapi kita harus memulai untuk menjadi hebat."
+    "quotes": "Não precisamos ser grandes para começar, mas temos que começar a ser grandes."
   }
 ]
