@@ -72,8 +72,8 @@ name = "~ BOT SULISTA"
 rdaftar = "OBRIGADO POR SE REGISTRAR NO BOT SULISTA😁"
 rmenu = "OLÁ AMIGUES :)"
 botinfo = ":)"
-limitt = 5000
-memberLimit = 5000
+limitt = 10
+memberLimit = 2
 ban = []
 premium = ["557996096237@s.whatsapp.net"]
 
