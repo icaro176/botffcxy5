@@ -43,7 +43,7 @@ Follow The Steps Below!
 > pkg update -y
 > pkg upgrade -y
 > pkg install git -y
-> git clone https://github.com/icaro176/botffcxy5
+> git clone https://github.com/icaro176/botffcxy
 > cd termux-bot-wa
 > bash install.sh
 > npm audit fix
