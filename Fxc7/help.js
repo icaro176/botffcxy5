@@ -2,63 +2,52 @@
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
 	return `
 
-\`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
-\`\`\`USANDO O BOT\`\`\`
+\`\`\`POR FAVOR, LEIA ABAIXO ANTES DE\`\`\`
+\`\`\`USAR O BOT\`\`\`
 
-╭──────「 *REGULAMENTO ${name}* 」
-┴
-┣⊱  \`\`\`NOME DO USUÁRIO:\`\`\` *${pushname2}*
-┣⊱  \`\`\`VERIFICAÇÃO:\`\`\` ✅
-┣⊱  \`\`\`LIMITE:\`\`\` *${limitt} por dia*
-┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
-┣⊱  \`\`\`HORA:\`\`\` *${jam}*
-┣⊱  \`\`\`DATA:\`\`\` *${tanggal}*
-┣⊱  \`\`\`VERSÃO:\`\`\` *1.0*
-┣⊱  ❌ *SPAM*
-┣⊱  ❌ *CALL*
-┣⊱  \`\`\`REGRA QUEBRADA??\`\`\` *BAN*
-┣⊱  *SOMENTE ADM TEM ACESSO PREMIUM SE O PROPRIETÁRIO ESTIVER NO GRUPO*
-┬
-╰────────────────────────
-
-
-╭──────「 *SOBRE ${name}* 」
-┴
+╭─⇨︙࿐༆𝐔𝐒𝐔𝐀𝐑𝐈𝐎࿐༆ ${name}* 」
+▎✰ *NOME DO USUÁRIO:* *${pushname2}*
+▎✰ *VERIFICAÇÃO:* 
+▎✰ *LIMITE:* *${limitt} por dia*
+▎✰ *ATIVO:* ${kyun(uptime)}
+▎✰ *HORA:* *${jam}*
+▎✰ *DATA:* *${tanggal}*
+▎✰ *VERSÃO:* *1.0*
+▎  ❌ *SPAM*
+▎  ❌ *CALL*
+▎ ✠ REGRAS QUEBRADA?? *BAN* ✠
+▎ ❖ *SOMENTE ADM TEM ACESSO PREMIUM SE O PROPRIETÁRIO ESTIVER NO GRUPO* ❖
+╰─
+│
+╭──「 *SOBRE ${name}* 」
 │➻ *${prefix}report <reportar erro>*
 │➻ *${prefix}speed*
 │➻ *${prefix}daftar*
-│➻ *${prefix}limit*
 │➻ *${prefix}banlist*
 │➻ *${prefix}bahasa* <códigos de idioma>
-┬
-╰────────────────────────
-
-
-͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOADER* 」
-┴
+╰─
+│
+͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──「 *MEDIA DOWNLOADER* 」
 │➻ *${prefix}tiktokstalk <usuário>*
 │➻ *${prefix}igstalk <usuário>*
 │➻ *${prefix}instavid <link válido>*
 │➻ *${prefix}instaimg <link válido>*
 │➻ *${prefix}instastory <usuário>*
 │➻ *${prefix}ssweb <url>*
-│➻ *${prefix}url2img <Url>*
+│➻ *${prefix}url2img <url>*
 │➻ *${prefix}tiktok* <link>
 │➻ *${prefix}fototiktok*
 │➻ *${prefix}wait* <foto do anime>
 │➻ *${prefix}trendtwit*
 │➻ *${prefix}google*
-┬
-╰────────────────────────
-
-
-╭──────「 *MENU CRIADOR* 」
-┴
+╰─
+│
+╭──「 *MENU CRIADOR* 」
 │➻ *${prefix}quotemaker txt/criador/tema*
 │➻ *${prefix}nulis nome/classe/texto*
 │➻ *${prefix}croman BOT e amigo*
 │➻ *${prefix}slide <texto>*
-├───────────────────
+├─
 │➻ *${prefix}tp 1 - 162*
 │➻ *${prefix}ep 1 - 216*
 │➻ *${prefix}tahta <texto>*
@@ -71,19 +60,16 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}tts <idioma> <texto>*
 │➻ *${prefix}ttp <texto>*
 │➻ *${prefix}cpaper <texto>*
-├───────────────────
+├─
 │➻ *${prefix}sticker*
 │➻ *${prefix}stiker*
 │➻ *${prefix}toimg*
 │➻ *${prefix}img2url*
 │➻ *${prefix}tomp3*
 │➻ *${prefix}ocr*
-┬
-╰──────────────────────────
-
-
-╭───────「 *SÓ EM GRUPO* 」
-┴
+╰─
+│
+╭──「 *SÓ EM GRUPO* 」
 │➻ *${prefix}modeanime On/Off*
 │➻ *${prefix}neonime naruto*
 │➻ *${prefix}naruto*
@@ -101,12 +87,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}anime*
 │➻ *${prefix}animecry*
 │➻ *${prefix}animekiss*
-┬
-╰───────────────────────
-
-
-╭───────「 *SÓ EM GRUPO* 」
-┴
+╰─
+│
+╭──「 *SÓ EM GRUPO* 」
 │➻ *${prefix}antilink On/Off*
 │➻ *${prefix}welcome On/Off*
 │➻ *${prefix}grup buka/tutup*
@@ -127,12 +110,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}mentionall*
 │➻ *${prefix}fitnah @membro/sua msg/msg do bot*
 │➻ *${prefix}listadmin*
-┬
-╰────────────────────────
-
-
-╭───────「 *SOMENTE ADMINISTRADOR* 」
-┴
+╰─
+│
+╭──「 *SOMENTE ADMINISTRADOR* 」
 │➻ *${prefix}nsfw On/Off*
 │➻ *${prefix}nsfwloli*
 │➻ *${prefix}nsfwblowjob*
@@ -141,12 +121,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}hentai*
 │➻ *${prefix}simih On/Off*
 │➻ *${prefix}bott on/off*
-┬
-╰────────────────────────
-
-
-╭──────「 *OUTROS DIVERSÃO E JOGO* 」
-┴
+╰─
+│
+╭──「 *DIVERSÃO E JOGO* 」
 │➻ *${prefix}anjing*
 │➻ *${prefix}kucing*
 │➻ *${prefix}testime*
@@ -170,12 +147,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}jadwaltvnow*
 │➻ *${prefix}hekerbucin*
 │➻ *${prefix}katailham*
-┬
-╰────────────────────────
-
-
-╭──────「 *OUTROS DIVERSÃO E JOGO* 」
-┴
+╰─
+│
+╭──「 *DIVERSÃO E JOGO* 」
 │➻ *${prefix}jarak*
 │➻ *${prefix}translate en/Oi*
 │➻ *${prefix}pasangan <@tag/@tag>*
@@ -199,12 +173,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}mimpi*
 │➻ *${prefix}infoalamat*
 │➻ *${prefix}playstore <app>*
-┬
-╰───────────────────────────
-
-
-╭──────「 *OUTROS DIVERSÃO E JOGO* 」
-┴
+╰─
+│
+╭──「 *DIVERSÃO E JOGO* 」
 │➻ *${prefix}readmore*
 │➻ *${prefix}puisiimg*
 │➻ *${prefix}asupan*
@@ -215,24 +186,18 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}kalkulator 13*12*
 │➻ *${prefix}moddroid lightroom*
 │➻ *${prefix}happymod lightroom*
-┬
-╰────────────────────────
-
-
-╭──────「 *OUTROS DIVERSÃO E JOGO* 」
-┴
+╰─
+│
+╭──「 *DIVERSÃO E JOGO* 」
 │➻ *${prefix}randomkpop*
 │➻ *${prefix}cersex*
 │➻ *${prefix}randombokep*
 │➻ *${prefix}pornhub stepMoms*
 │➻ *${prefix}xvideos japan*
 │➻ *${prefix}nekopoi oni chichi*
-┬
-╰────────────────────────
-
-
-╭──────「 *OUTROS* 」
-┴
+╰─
+│
+╭──「 *OUTROS* 」
 │➻ *${prefix}becrypt string*
 │➻ *${prefix}encode64 string*
 │➻ *${prefix}decode64 encrypt*
@@ -247,20 +212,14 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}pastebin <texto>*
 │➻ *${prefix}tinyurl link*
 │➻ *${prefix}bitly link*
-┬
-╰────────────────────────
-
-
-╭──────「 *OUTROS DIVERSÃO E JOGO* 」
-┴
+╰─
+│
+╭──「 *DIVERSÃO E JOGO* 」
 │➻ *${prefix}spamcall 012xxxxxxxxx*
 │➻ *${prefix}spamgmail exemplo@gmail.com*
-┬
-╰────────────────────────
-
-
-╭─────────「 *PROPRIETÁRIO* 」
-┴
+╰─
+│
+╭──「 *PROPRIETÁRIO* 」
 │➻ *${prefix}addprem @tag*
 │➻ *${prefix}removeprem @tag*
 │➻ *${prefix}setmemlimit*
@@ -280,12 +239,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}clone*
 │➻ *${prefix}getses*
 │➻ *${prefix}leave*
-┬
-╰────────────────────────
-
-
-╭────────「 *SOMENTE PREMIUM* 」
-┴
+╰─
+│
+╭──「 *SOMENTE PREMIUM* 」
 │➻ *${prefix}playmp3 <título>*
 │➻ *${prefix}fb <link>*
 │➻ *${prefix}snack <link snack video>*
@@ -293,8 +249,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}ytmp4 <link yt>*
 │➻ *${prefix}joox <título>*
 │➻ *${prefix}smule <link Video Smule>*
-┬
-╰────────────────────────`
+╰─`
 }
 
 exports.help = help
