@@ -62,17 +62,17 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:❁̸⃪͎۪۪۪〫⃕͘͡⃟💸íℂ⨻ℜ〄•᭄ꦿ⃟꧇۪⃟\n'
+            + 'FN:❁̸⃪͎۪۪۪〫⃕͘͡⃟💸ƚՇᮟℛ❂•᭄ꦿ⃟꧇۪⃟🔥\n'
             + 'ORG:Icaro;\n'
             + 'TEL;type=CELL;type=VOICE;waid=557996096237:+55 79 9609-6237\n'
             + 'END:VCARD'
 
 prefix = "#"
 name = "~ BOT SULISTA"
-rdaftar = "OBRIGADO POR SE REGISTRAR NO BOT SULISTA😁"
-rmenu = "OLÁ AMIGUES :)"
+rdaftar = "OBRIGADO POR SE REGISTRAR NO BOT SULISTA 😁"
+rmenu = "BEM VINDx AO BOT SULISTA :)"
 botinfo = ":)"
-limitt = 5000
+limitt = 25000
 memberLimit = 2
 ban = []
 premium = ["557996096237@s.whatsapp.net"]
@@ -85,7 +85,7 @@ function kyun(seconds){
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
 
-  return `${pad(hours)} Hora ${pad(minutes)} Minutos ${pad(seconds)} Segundos`
+  return `${pad(hours)} Hora ${pad(minutes)} Minuto ${pad(seconds)} Segundos`
 }
 
 
@@ -181,11 +181,11 @@ async function starts() {
 			
 
 			mess = {
-				wait: '*⏳ AGUARDE EM PROCESSO...*',
+				wait: '*⏳ AGUARDE EM PROCESSO... ⌛*',
 				success: '*SUCESSO...*',
 				error: {
 					stick: ' *Falha, ocorreu um erro ao converter a imagem em um adesivo*',
-					Iv: '*Link inválido*'
+					Iv: '*❌Link inválido❌*'
 				},
 				only: {
 					group: '*Este comando só pode ser usado em grupos!*',
@@ -193,7 +193,7 @@ async function starts() {
 					ownerG: '*Este comando so pode ser usado pelo dono do grupo!*',
 					ownerB: '*Este comando só pode ser usado pelo Proprietário!* ',
 					premium: '*Desculpe, este recurso é apenas para usuários que o proprietário adicionou!!*',
-					userB: `Oii ${pushname2} Você não está registrado. Digite\n${prefix}daftar`,
+					userB: `Oii ${pushname2} você não está registrado. Digite\n${prefix}daftar`,
 					admin: '*Desculpe, este comando só pode ser usado por administradores do grupo!*',
 					Badmin: '*Desculpe, este comando só pode ser usado quando o bot é admin!*',
 					publikG: `*Desculpe, o bot está privado pelo proprietário*\n*Para mais detalhes, digite*\n*${prefix}infobot*`
@@ -265,7 +265,7 @@ async function starts() {
 				try {
 					const getmemex = groupMembers.length
 					    if (getmemex <= memberLimit) {
-					    frhan.sendMessage(from, `Desculpa ${name} Não é possível entrar no grupo por causa dos membros do grupo ${groupMetadata.subject} Limite de membro não cumprido\n\nmínimo de membros  ${memberLimit}`, text)
+					    frhan.sendMessage(from, `Desculpa ${name} não é possível entrar no grupo por causa dos membros do grupo ${groupMetadata.subject} Limite de membro não cumprido\n\nmínimo de membros  ${memberLimit}`, text)
                             frhan.groupLeave(from)
 					    }
 		       } catch (err) { console.error(err)  }
@@ -308,11 +308,11 @@ async function starts() {
        if (messagesLink.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} O administrador do grupo não ficará surpreso pelo link de outro grupo?`)
+		if (isGroupAdmins) return reply(`${pushname2} os outros administradores do grupo não ficará surpreso pelo link de outro grupo?`)
 		frhan.updatePresence(from, Presence.composing)
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
-		reply('Tchau👋')
+		reply('Tchau 👋')
 		}, 1100)
 		setTimeout( () => {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
@@ -347,7 +347,7 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return reply('Escolha o tema, mano, 1 - 162\n\nExemplos de uso: !tp/1/bot')
+				if (args.length < 1) return reply('Escolha o tema, mano, 1 - 162\n\nExemplos de uso: #tp/1/bot')
 				textpro = body.slice(4)
 				txtpro1 = textpro.split("/")[0];
 				txtpro2 = textpro.split("/")[1];
@@ -382,7 +382,7 @@ async function starts() {
 					} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					captionnya = `╭─「 *REGISTRO* 」\`\`\`\n│ O registro foi bem sucedido, SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Data ${date} ${time}\`\`\`\n│\`\`\`[Nome]: ${pushname2}\`\`\`\n│\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`Por favor\`\`\`\n│\`\`\`digite ${prefix}help/menu\`\`\`\n│\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *REGISTRO* 」\`\`\`\n│ O registro foi bem sucedido, SN: \n│ TM08GK8PPHBSJDH10J\`\`\`\n│\n│\`\`\`Data ${date} ${time}\`\`\`\n│\`\`\`[Nome]: ${pushname2}\`\`\`\n│\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar o bot\`\`\`\n│\`\`\`Por favor\`\`\`\n│\`\`\`digite ${prefix}menu\`\`\`\n│\`\`\`\n╰───────────────`
 					daftarimg = await getBuffer(ppimg)
 					frhan.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break 
@@ -418,11 +418,10 @@ async function starts() {
 					} catch {
 					profil = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 					}
-					 profile = `╭─「 *SEU PERFIL* 」\n│• *Nome:* ${pushname2}\n│• *Usuário Registrado:* ✅\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰─────────────────────`
+					 profile = `╭─「 *SEU PERFIL* 」\n│• *Nome:* ${pushname2}\n│• *Usuário Registrado:* ✅\n│• *Link:* wa.me/${sender.split("@")[0]}\n╰───────────────`
 					buff = await getBuffer(profil)
 					frhan.sendMessage(from, buff, image, {quoted: mek, caption: profile})
 					break
-
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
@@ -546,7 +545,7 @@ async function starts() {
                     for (let lmt of limidat) {
                         if (lmt.id === sender) {
                             let limitCounts = limitt - lmt.limit
-                            if (limitCounts <= 0) return reply(from,`Seu limite subiu`, id)
+                            if (limitCounts <= 0) return reply(from,`Seu limite acabou`, id)
                             await reply(`*LIMITE: ${limitCounts}*`)
                             found = true
                         }
@@ -2300,7 +2299,7 @@ async function starts() {
 					frhan.sendMessage(from, 'Ignorar" Al-fatihah', text)
 					}, 8000)
 					setTimeout( () => {
-					reply('oi:D')
+					reply('oi :D')
 					}, 7000)
 					setTimeout( () => {
 					frhan.groupRemove(from, mentioned)
@@ -2312,7 +2311,7 @@ async function starts() {
 					frhan.sendMessage(from, 'kakaka :D', text)
 					}, 2500)
 					setTimeout( () => {
-					reply('Adeus kkakaka :D')
+					reply('Adeus :D')
 					}, 0)
 					break
 				case 'promote':
@@ -2383,7 +2382,7 @@ async function starts() {
 					break
 				case 'toimg':
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (!isQuotedSticker) return reply(' reply stickernya gan')
+					if (!isQuotedSticker) return reply('*MARQUE UMA FIGURINHA MANO*')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await frhan.downloadAndSaveMediaMessage(encmedia)
 					ran= getRandom('.png')
@@ -2401,18 +2400,18 @@ async function starts() {
 					if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Selecione ativar ou desativar!')
-					if (args[0] === 'aktif') {
+					if (args.length < 1) return reply('Selecione on ou off!')
+					if (args[0] === 'on') {
 						if (isPublic) return reply('já está ativo')
 						publik.push(from)
 						fs.writeFileSync('./database/json/public.json', JSON.stringify(publik))
 						reply(`Sucesso, por favor digite ${prefix}menu Para recursos de bot`)
-					} else if (args[0] === 'nonaktif') {
+					} else if (args[0] === 'off') {
 						publik.splice(from, 1)
 						fs.writeFileSync('./database/json/public.json', JSON.stringify(publik))
-						reply(`Sucesso agora os membros não podem usar o bot`)
+						reply(`*BOT DESLIGADO*`)
 					} else {
-						reply('Selecione aktif ou nonaktif')
+						reply('Selecione on ou off')
 					}
 					break
 				case 'simih':
