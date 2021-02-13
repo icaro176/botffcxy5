@@ -1,96 +1,79 @@
 // menu fitur bot
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
 	return `
-	
-\`\`\`Follow My Instagram\`\`\`
-${instagram}
 
-\`\`\`SUBSCRIBE😁\`\`\`
-${yt}
+\`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
+\`\`\`USANDO O BOT\`\`\`
 
-\`\`\`GROUP OFFICIAL\`\`\`
-https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
-
-
-\`\`\`HARAP BACA NOTE DIBAWAH SEBELUM\`\`\`
-\`\`\`MENGGUNAKAN BOT\`\`\`
-
-╭──────「 *REGULATION ${name}* 」
+╭──────「 *REGULAMENTO ${name}* 」
 ┴
-┣⊱  \`\`\`NAMA USER:\`\`\` *${pushname2}*
-┣⊱  \`\`\`VERIVICATION:\`\`\` ✅
-┣⊱  \`\`\`LIMIT:\`\`\` *${limitt} perhari*
-┣⊱  \`\`\`AKTIF:\`\`\` ${kyun(uptime)}
-┣⊱  \`\`\`JAM:\`\`\` *${jam} WIB*
-┣⊱  \`\`\`TANGGAL:\`\`\` *${tanggal}*
-┣⊱  \`\`\`VERSION:\`\`\` *6.5.0*
-┣⊱  \`\`\`USER TERDAFTAR:\`\`\` *${user.length} User*
+┣⊱  \`\`\`NOME DO USUÁRIO:\`\`\` *${pushname2}*
+┣⊱  \`\`\`VERIFICAÇÃO:\`\`\` ✅
+┣⊱  \`\`\`LIMITE:\`\`\` *${limitt} por dia*
+┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
+┣⊱  \`\`\`HORA:\`\`\` *${jam}*
+┣⊱  \`\`\`DATA:\`\`\` *${tanggal}*
+┣⊱  \`\`\`VERSÃO:\`\`\` *1.0*
 ┣⊱  ❌ *SPAM*
-┣⊱  ❌ *CALL & VC*
-┣⊱  \`\`\`Melanggar??\`\`\` *Banned + Out Group*
+┣⊱  ❌ *CALL*
+┣⊱  \`\`\`REGRA QUEBRADA??\`\`\` *BAN*
+┣⊱  *SOMENTE ADM TEM ACESSO PREMIUM SE O PROPRIETÁRIO ESTIVER NO GRUPO*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *ABOUT ${name}* 」
+╭──────「 *SOBRE ${name}* 」
 ┴
-│➻ *${prefix}report lapor bug*
-│➻ *${prefix}info*
-│➻ *${prefix}donasi*
-│➻ *${prefix}owner*
+│➻ *${prefix}report <reportar erro>*
 │➻ *${prefix}speed*
 │➻ *${prefix}daftar*
 │➻ *${prefix}limit*
-│➻ *${prefix}totaluser*
-│➻ *${prefix}blocklist*
 │➻ *${prefix}banlist*
-│➻ *${prefix}premiumlist*
-│➻ *${prefix}bahasa*
+│➻ *${prefix}bahasa* <códigos de idioma>
 ┬
 ╰────────────────────────
 
 
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOADER* 」
 ┴
-│➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}igstalk _farhan_xcode7*
-│➻ *${prefix}instavid link valid*
-│➻ *${prefix}instaimg link valid*
-│➻ *${prefix}instastory username*
-│➻ *${prefix}ssweb url*
-│➻ *${prefix}url2img Url*
-│➻ *${prefix}tiktok*
+│➻ *${prefix}tiktokstalk <usuário>*
+│➻ *${prefix}igstalk <usuário>*
+│➻ *${prefix}instavid <link válido>*
+│➻ *${prefix}instaimg <link válido>*
+│➻ *${prefix}instastory <usuário>*
+│➻ *${prefix}ssweb <url>*
+│➻ *${prefix}url2img <Url>*
+│➻ *${prefix}tiktok* <link>
 │➻ *${prefix}fototiktok*
-│➻ *${prefix}kbbi*
-│➻ *${prefix}wait*
+│➻ *${prefix}wait* <foto do anime>
 │➻ *${prefix}trendtwit*
-│➻ *${prefix}google berita terkini*
+│➻ *${prefix}google*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *CREATOR MENU* 」
+╭──────「 *MENU CRIADOR* 」
 ┴
-│➻ *${prefix}quotemaker tx/wtrmk/tema*
-│➻ *${prefix}nulis nama/kelas/text*
-│➻ *${prefix}croman FXC7 dan Friend*
-│➻ *${prefix}slide Fxc7 BOT WA*
+│➻ *${prefix}quotemaker txt/criador/tema*
+│➻ *${prefix}nulis nome/classe/texto*
+│➻ *${prefix}croman BOT e amigo*
+│➻ *${prefix}slide <texto>*
 ├───────────────────
 │➻ *${prefix}tp 1 - 162*
 │➻ *${prefix}ep 1 - 216*
-│➻ *${prefix}tahta FXC7*
-│➻ *${prefix}cglass FXC7*
-│➻ *${prefix}cstyle FXC7*
-│➻ *${prefix}cgame FXC7*
-│➻ *${prefix}clove FXC7*
-│➻ *${prefix}cparty FXC7*
-│➻ *${prefix}csky FXC7*
-│➻ *${prefix}tts id Haii*
-│➻ *${prefix}ttp Fxc7*
-│➻ *${prefix}cpaper Fxc7*
+│➻ *${prefix}tahta <texto>*
+│➻ *${prefix}cglass <texto>*
+│➻ *${prefix}cstyle <texto>*
+│➻ *${prefix}cgame <texto>*
+│➻ *${prefix}clove <texto>*
+│➻ *${prefix}cparty <texto>*
+│➻ *${prefix}csky <texto>*
+│➻ *${prefix}tts <idioma> <texto>*
+│➻ *${prefix}ttp <texto>*
+│➻ *${prefix}cpaper <texto>*
 ├───────────────────
+│➻ *${prefix}sticker*
 │➻ *${prefix}stiker*
-│➻ *${prefix}gifstiker*
 │➻ *${prefix}toimg*
 │➻ *${prefix}img2url*
 │➻ *${prefix}tomp3*
@@ -99,7 +82,7 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰──────────────────────────
 
 
-╭───────「 *GROUP ONLY* 」
+╭───────「 *SÓ EM GRUPO* 」
 ┴
 │➻ *${prefix}modeanime On/Off*
 │➻ *${prefix}neonime naruto*
@@ -122,7 +105,7 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰───────────────────────
 
 
-╭───────「 *GROUP ONLY* 」
+╭───────「 *SÓ EM GRUPO* 」
 ┴
 │➻ *${prefix}antilink On/Off*
 │➻ *${prefix}welcome On/Off*
@@ -130,25 +113,25 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 │➻ *${prefix}ownergrup*
 │➻ *${prefix}setpp*
 │➻ *${prefix}infogc*
-│➻ *${prefix}add 628xxxxxxxxxx*
-│➻ *${prefix}kick @mentioned*
-│➻ *${prefix}kicktime @mentioned*
-│➻ *${prefix}promote @mentioned*
-│➻ *${prefix}demote @mentioned*
-│➻ *${prefix}setname*
-│➻ *${prefix}setdesc*
+│➻ *${prefix}add 554xxxxxxxxxx*
+│➻ *${prefix}kick @membro*
+│➻ *${prefix}kicktime @membro*
+│➻ *${prefix}promote @membro*
+│➻ *${prefix}demote @membro*
+│➻ *${prefix}setname* <texto>
+│➻ *${prefix}setdesc* <texto>
 │➻ *${prefix}linkgrup*
 │➻ *${prefix}tagme*
 │➻ *${prefix}hidetag*
 │➻ *${prefix}tagall*
 │➻ *${prefix}mentionall*
-│➻ *${prefix}fitnah @mentioned/isi/balasan*
+│➻ *${prefix}fitnah @membro/sua msg/msg do bot*
 │➻ *${prefix}listadmin*
 ┬
 ╰────────────────────────
 
 
-╭───────「 *GROUP ONLY ADMIN* 」
+╭───────「 *SOMENTE ADMINISTRADOR* 」
 ┴
 │➻ *${prefix}nsfw On/Off*
 │➻ *${prefix}nsfwloli*
@@ -162,26 +145,25 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *OUTROS DIVERSÃO E JOGO* 」
 ┴
 │➻ *${prefix}anjing*
 │➻ *${prefix}kucing*
 │➻ *${prefix}testime*
 │➻ *${prefix}hilih*
-│➻ *${prefix}apakah*
-│➻ *${prefix}kapankah*
-│➻ *${prefix}bisakah*
-│➻ *${prefix}rate*
-│➻ *${prefix}watak*
-│➻ *${prefix}hobby*
+│➻ *${prefix}apakah* <texto>
+│➻ *${prefix}kapankah* <texto>
+│➻ *${prefix}bisakah* <texto>
+│➻ *${prefix}rate* <texto>
+│➻ *${prefix}watak* <texto>
+│➻ *${prefix}hobby* <texto>
 │➻ *${prefix}infogempa*
-│➻ *${prefix}infonomor*
+│➻ *${prefix}infonomor* <55xxx>
 │➻ *${prefix}quotes*
 │➻ *${prefix}truth*
 │➻ *${prefix}dare*
 │➻ *${prefix}katabijak*
 │➻ *${prefix}fakta*
-│➻ *${prefix}darkjokes*
 │➻ *${prefix}bucin*
 │➻ *${prefix}pantun*
 │➻ *${prefix}katacinta*
@@ -192,37 +174,36 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *OUTROS DIVERSÃO E JOGO* 」
 ┴
-│➻ *${prefix}jarak Banyuwangi/Surabaya*
-│➻ *${prefix}translate en/Apa kabar?*
-│➻ *${prefix}pasangan Farhan/Iriene*
-│➻ *${prefix}gantengcek Farhan*
-│➻ *${prefix}cantikcek Iriene*
-│➻ *${prefix}artinama Farhan*
-│➻ *${prefix}persengay Topan*
-│➻ *${prefix}pbucin Farhan*
-│➻ *${prefix}bpfont Farhan*
-│➻ *${prefix}textstyle FXC7*
+│➻ *${prefix}jarak*
+│➻ *${prefix}translate en/Oi*
+│➻ *${prefix}pasangan <@tag/@tag>*
+│➻ *${prefix}gantengcek <@tag>*
+│➻ *${prefix}cantikcek <@tag>*
+│➻ *${prefix}persengay <@tag>*
+│➻ *${prefix}pbucin <texto>*
+│➻ *${prefix}bpfont <texto>*
+│➻ *${prefix}textstyle <texto>*
 │➻ *${prefix}jadwaltv antv*
-│➻ *${prefix}lirik melukis senja*
-│➻ *${prefix}chord Melukis senja*
+│➻ *${prefix}lirik <título>*
+│➻ *${prefix}chord <título>*
 │➻ *${prefix}wiki Adolf Hitler*
-│➻ *${prefix}brainly pertanyaan*
-│➻ *${prefix}resepmasakan rawon*
-│➻ *${prefix}map Banyuwangi*
-│➻ *${prefix}film Fast and Farious*
-│➻ *${prefix}pinterest gambar kucing*
-│➻ *${prefix}infocuaca Banyuwangi*
-│➻ *${prefix}jamdunia Banyuwangi*
-│➻ *${prefix}mimpi Ular*
-│➻ *${prefix}infoalamat jalan Banyuwangi*
-│➻ *${prefix}playstore WhatsApp*
+│➻ *${prefix}brainly <pergunta>*
+│➻ *${prefix}resepmasakan*
+│➻ *${prefix}map <cidade>*
+│➻ *${prefix}film <filme>*
+│➻ *${prefix}pinterest <fotos de cachorro>*
+│➻ *${prefix}infocuaca <cidade>*
+│➻ *${prefix}jamdunia*
+│➻ *${prefix}mimpi*
+│➻ *${prefix}infoalamat*
+│➻ *${prefix}playstore <app>*
 ┬
 ╰───────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *OUTROS DIVERSÃO E JOGO* 」
 ┴
 │➻ *${prefix}readmore*
 │➻ *${prefix}puisiimg*
@@ -238,7 +219,7 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *OUTROS DIVERSÃO E JOGO* 」
 ┴
 │➻ *${prefix}randomkpop*
 │➻ *${prefix}cersex*
@@ -250,17 +231,7 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
-┴
-│➻ *${prefix}jadwalsholat Banyuwangi*
-│➻ *${prefix}quran*
-│➻ *${prefix}quranlist*
-│➻ *${prefix}quransurah 1*
-┬
-╰────────────────────────
-
-
-╭──────「 *FIND ME SIR* 」
+╭──────「 *OUTROS* 」
 ┴
 │➻ *${prefix}becrypt string*
 │➻ *${prefix}encode64 string*
@@ -272,38 +243,38 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 │➻ *${prefix}encoctal string*
 │➻ *${prefix}decoctal encrypt*
 │➻ *${prefix}hashidentifier Encrypt Hash*
-│➻ *${prefix}dorking dork*
-│➻ *${prefix}pastebin teks*
+│➻ *${prefix}dorking <idiota>*
+│➻ *${prefix}pastebin <texto>*
 │➻ *${prefix}tinyurl link*
 │➻ *${prefix}bitly link*
 ┬
 ╰────────────────────────
 
 
-╭──────「 *OTHERS FUN & GAME* 」
+╭──────「 *OUTROS DIVERSÃO E JOGO* 」
 ┴
-│➻ *${prefix}spamcall 083xxxxxxxxx*
-│➻ *${prefix}spamgmail contoh@gmail.com*
+│➻ *${prefix}spamcall 012xxxxxxxxx*
+│➻ *${prefix}spamgmail exemplo@gmail.com*
 ┬
 ╰────────────────────────
 
 
-╭─────────「 *OWNER ONLY* 」
+╭─────────「 *PROPRIETÁRIO* 」
 ┴
-│➻ *${prefix}addprem mentioned*
-│➻ *${prefix}removeprem mention*
+│➻ *${prefix}addprem @tag*
+│➻ *${prefix}removeprem @tag*
 │➻ *${prefix}setmemlimit*
 │➻ *${prefix}setlimit*
-│➻ *${prefix}setreply*
-│➻ *${prefix}setprefix*
-│➻ *${prefix}setnamebot*
-│➻ *${prefix}setppbot*
-│➻ *${prefix}bc*
-│➻ *${prefix}bcgc*
-│➻ *${prefix}ban*
-│➻ *${prefix}unban*
-│➻ *${prefix}block*
-│➻ *${prefix}unblock*
+│➻ *${prefix}setreply* <texto>
+│➻ *${prefix}setprefix* <símbolo>
+│➻ *${prefix}setnamebot* <nome>
+│➻ *${prefix}setppbot* <foto>
+│➻ *${prefix}bc* <texto>
+│➻ *${prefix}bcgc* <texto>
+│➻ *${prefix}ban* <@tag>
+│➻ *${prefix}unban* <@tag>
+│➻ *${prefix}block* <@tag>
+│➻ *${prefix}unblock* <@tag>
 │➻ *${prefix}clearall*
 │➻ *${prefix}delete*
 │➻ *${prefix}clone*
@@ -313,27 +284,15 @@ https://chat.whatsapp.com/GHC5djoQJrcGBJFwYQuQoB
 ╰────────────────────────
 
 
-╭────────「 *PREMIUM ONLY* 」
+╭────────「 *SOMENTE PREMIUM* 」
 ┴
-│➻ *${prefix}playmp3 menepi*
-│➻ *${prefix}fb link video*
-│➻ *${prefix}snack link snack video*
-│➻ *${prefix}ytmp3 link yt*
-│➻ *${prefix}ytmp4 link yt*
-│➻ *${prefix}joox Monolog Pamungkas*
-│➻ *${prefix}smule Link Video Smule*
-┬
-╰────────────────────────
-
-
-╭─────「 *SUPPORT ${name}* 」
-┴
-│➲ *O BOT*
-│➲ *M. HADI FIRMANSYA*
-│➲ *DELIA AULIA*
-│➲ *KEVIN DAVID*
-│➲ *MY TEAM FXC7 BOT*
-│➲ *CONTENT CREATOR BOT WHATSAPP*
+│➻ *${prefix}playmp3 <título>*
+│➻ *${prefix}fb <link>*
+│➻ *${prefix}snack <link snack video>*
+│➻ *${prefix}ytmp3 <link yt>*
+│➻ *${prefix}ytmp4 <link yt>*
+│➻ *${prefix}joox <título>*
+│➻ *${prefix}smule <link Video Smule>*
 ┬
 ╰────────────────────────`
 }
@@ -348,36 +307,35 @@ function kyun(seconds){
   var hours = Math.floor(seconds / (60*60));
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
-  return `*${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik*`
+  return `*${pad(hours)} Hora ${pad(minutes)} Minutos ${pad(seconds)} Segundos*`
 }
 
 // info bot 
 const bottt = (prefix) => {
 return `
-\`\`\`Untuk Sekarang Bot Hanya Bisa Digunakan Di Group Karna\`\`\` *KUOTA MAHAL*\n\n *Mohon Pengertiannya*
-Sekali Lagi Maaf
+\`\`\`Por enquanto, o bot só pode ser usado em grupos*
 
-Jika Bot Ini Ada Di Grup Anda Admin Grup Suruh Aktifkan Bot Dengan Cara ${prefix}bott aktif
+Se este bot estiver em seu grupo, diga para ativar o bot por via ${prefix}bott aktif
 `
 }
 exports.bottt = bottt
 // donasi menu
 const donasi = (name) => { 
 	return `       
-╭─────「 *DONASI SEIKHLASNYA* 」
+╭─────「 *:v* 」
 ┴
-│√ *PULSA: 08311800241*
-│√ *OVO : 08311800241*
+│√ *v*
+│√ *v*
 │
-│\`\`\`Pulsa\`\`\`
-│ *15k Invite Bot Ke Grup selama 1 bulan*
+│\`\`\`f\`\`\`
+│ *f*
 │
-│\`\`\`OVO\`\`\`
-│ *10k Invite Bot Ke Group Selama 1 Bulan*
+│\`\`\`z\`\`\`
+│ *z*
 ┬
 ╰──────「 *BY ${name}* 」
 
-Untuk Kelangsungan Hidup Bot Karna Kuota Mahal:'
+Para a sobrevivência do bot, porque as contas são caras:'
 `
 }
 exports.donasi = donasi
@@ -385,7 +343,7 @@ exports.donasi = donasi
 // bahasa list
 const bahasa = (prefix) => {
 return `
-List Bahasa Untuk Command *${prefix}tts*
+Lista de idiomas para comando *${prefix}tts*
 
   af: Afrikaans
   sq: Albanian
@@ -444,12 +402,12 @@ exports.bahasa = bahasa
 
 // Limit
 const limitend = (pushname2) => {
-        return`*maaf ${pushname2} limit hari ini habis*\n*limit di reset setiap jam 12:00 WIB TENGAH MALAM*`
+        return`*Desculpe ${pushname2} seu limite acabou*\n*o limite é redefinido a cada 12:00*`
 }
 
 const limitcount = (limitCounts) => {
         return`
-Limit Kamu: ${limitCounts}
+Seu limite: ${limitCounts}
 `
 }
 
