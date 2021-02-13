@@ -2403,7 +2403,7 @@ async function starts() {
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Selecione ativar ou desativar!')
 					if (args[0] === 'aktif') {
-						if (isPublic) return reply('já está ativo)
+						if (isPublic) return reply('já está ativo')
 						publik.push(from)
 						fs.writeFileSync('./database/json/public.json', JSON.stringify(publik))
 						reply(`Sucesso, por favor digite ${prefix}menu Para recursos de bot`)
