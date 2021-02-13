@@ -67,13 +67,13 @@ const vcard = 'BEGIN:VCARD\n'
             + 'TEL;type=CELL;type=VOICE;waid=557996096237:+55 79 9609-6237\n'
             + 'END:VCARD'
 
-prefix = "["
+prefix = "#"
 name = "~ BOT SULISTA"
 rdaftar = "OBRIGADO POR SE REGISTRAR NO BOT SULISTA😁"
-rmenu = "OLÁ AMIGUES:)"
+rmenu = "OLÁ AMIGUES :)"
 botinfo = ":)"
-limitt = 10
-memberLimit = 2
+limitt = 500
+memberLimit = 5000
 ban = []
 premium = ["557996096237@s.whatsapp.net"]
 
