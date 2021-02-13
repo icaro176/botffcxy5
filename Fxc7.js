@@ -2762,7 +2762,7 @@ async function starts() {
 				if (isLimit(sender)) return reply(limitend(pushname2))
                 anu = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=${TobzApi}`, {method: 'get'})
                if (anu.error) return reply(anu.error)
-                 infomp3 = `╭─「 *JOOX DOWNLOAD* 」\n│\n│ *• Título* : ${anu.result.judul}\n│ *• Álbum* : ${anu.result.album}\n│ *• Publicado* : ${anu.result.dipublikasi}\n│\n│ *Espere um momento para ser enviado*\n│ *SEM SPAM*\n╰─────────────────────`
+                 infomp3 = `╭─「 *JOOX DOWNLOAD* 」\n│\n│ *• Título* : ${anu.result.judul}\n│ *• Álbum* : ${anu.result.album}\n│ *• Publicado* : ${anu.result.dipublikasi}\n│\n│ *A MÚSICA ESTA SENDO ENVIADA*\n│ *SEM SPAM*\n╰───────────`
                 bufferddd = await getBuffer(anu.result.thumb)
                  reply(mess.wait)
                 buff = await getBuffer(anu.result.mp3)
@@ -2798,7 +2798,7 @@ async function starts() {
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}&apikey=${VthearApi}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					ytt = `╭─「 *YOUTUBE MP4 DOWNLOAD* 」\n│\n│• *Título:* ${anu.result.title}\n│• *Tamanho:* ${anu.result.size}\n│• *Link:* https://www.youtu.be/${anu.result.id}\n│\n│ Espere um minuto 1 minuto talvez um pouco mais \n│ baixando vídeo\n╰─────────────────────`
+					ytt = `╭─「 *YOUTUBE MP4 DOWNLOAD* 」\n│\n│• *Título:* ${anu.result.title}\n│• *Tamanho:* ${anu.result.size}\n│• *Link:* https://www.youtu.be/${anu.result.id}\n│\n│ Espere um minuto 1 minuto talvez um pouco mais \n│ baixando vídeo\n╰───────────`
 					buff = await getBuffer(anu.result.imgUrl)
 					reply(mess.wait)
 					buffer = await getBuffer(anu.result.UrlVideo)
@@ -2816,7 +2816,7 @@ async function starts() {
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}&apikey=${VthearApi}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					yta = `╭─「 *YOUTUBE MP3 DOWNLOAD* 」\n│\n│• *Título:* ${anu.result.title}\n│• *Tamanho:* ${anu.result.size}\n│• *Link:* https://www.youtu.be/${anu.result.id}\n│\n│ Espere um minuto 1 minuto talvez um pouco mais \n│ baixando vídeo\n╰─────────────────────`
+					yta = `╭─「 *YOUTUBE MP3 DOWNLOAD* 」\n│\n│• *Título:* ${anu.result.title}\n│• *Tamanho:* ${anu.result.size}\n│• *Link:* https://www.youtu.be/${anu.result.id}\n│\n│ Espere 1 minuto ou talvez um pouco mais \n│ baixando vídeo\n╰───────────`
 					buff = await getBuffer(anu.result.imgUrl)
 					reply(mess.wait)
 					buffer = await getBuffer(anu.result.UrlMp3)
@@ -2826,8 +2826,7 @@ async function starts() {
 					break 
 
            case 'playmp3':
-                if (isBanned) return reply(mess.only.benned)    
-				if (isBanned) return reply(mess.only.benned)    
+                if (isBanned) return reply(mess.only.benned)        
 				if (!isUser) return reply(mess.only.userB)
                                 if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
@@ -2835,7 +2834,7 @@ async function starts() {
                 play = body.slice(9)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=${ZeksApi}`, {method: 'get'})
                if (anu.error) return reply(anu.error)
-                 infomp3 = `╭─「 *PLAY MP3* 」\n│*• Título:* ${anu.result.title}\n│*• Fonte:* ${anu.result.source}\n│*• Tamanho:* ${anu.result.size}\n│\n│*Espere um momento para ser enviado\n│ SEM SPAM*\n╰─────────────────────`
+                 infomp3 = `╭─「 *PLAY MP3* 」\n│*• Título:* ${anu.result.title}\n│*• Fonte:* ${anu.result.source}\n│*• Tamanho:* ${anu.result.size}\n│\n│*ESPERE A MÚSICA ESTÁ SENDO ENVIADA\n│ SEM SPAM*\n╰───────────`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 frhan.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -2857,7 +2856,7 @@ async function starts() {
 					thumb = await getBuffer(anu.thumb)
 					frhan.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
-					frhan.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek, caption: 'Nih Gan'})
+					frhan.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek, caption: 'Aquii'})
 					await limitAdd(sender) 	
 					break  
 
