@@ -2759,7 +2759,8 @@ async function starts() {
          case 'joox':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPrem) return reply(mess.only.premium)
+                                if (!isPublic) return reply(mess.only.publikG)
+				if (isLimit(sender)) return reply(limitend(pushname2))
                 anu = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=${TobzApi}`, {method: 'get'})
                if (anu.error) return reply(anu.error)
                  infomp3 = `╭─「 *JOOX DOWNLOAD* 」\n│\n│ *• Título* : ${anu.result.judul}\n│ *• Álbum* : ${anu.result.album}\n│ *• Publicado* : ${anu.result.dipublikasi}\n│\n│ *Espere um momento para ser enviado*\n│ *SEM SPAM*\n╰─────────────────────`
@@ -2774,7 +2775,8 @@ async function starts() {
           case 'snack':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPrem) return reply(mess.only.premium)
+                                if (!isPublic) return reply(mess.only.publikG)
+				if (isLimit(sender)) return reply(limitend(pushname2))
 				if (args.length < 1) return reply('Cadê o url, mano?')
 					if (!isUrl(args[0]) && !args[0].includes('sck')) return reply(mess.error.Iv)
                 anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/sckdown?url=${args[0]}`, {method: 'get'})
@@ -2790,8 +2792,9 @@ async function starts() {
                 
        case 'ytmp4':
     				if (isBanned) return reply(mess.only.benned)    
-    				if (!isPrem) return reply(mess.only.premium)
-    				if (!isUser) return reply(mess.only.userB)
+				if (!isUser) return reply(mess.only.userB)
+                                if (!isPublic) return reply(mess.only.publikG)
+				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return reply('Cadê o url, mano?')
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}&apikey=${VthearApi}`, {method: 'get'})
@@ -2807,8 +2810,9 @@ async function starts() {
 
 				case 'ytmp3':
 					if (isBanned) return reply(mess.only.benned)    
-					if (!isPrem) return reply(mess.only.premium)
-					if (!isUser) return reply(mess.only.userB)
+				        if (!isUser) return reply(mess.only.userB)
+                                        if (!isPublic) return reply(mess.only.publikG)
+				        if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return reply('Cadê o url, mano?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}&apikey=${VthearApi}`, {method: 'get'})
@@ -2824,8 +2828,10 @@ async function starts() {
 
            case 'playmp3':
                 if (isBanned) return reply(mess.only.benned)    
-				if (!isPrem) return reply(mess.only.premium)
+				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
+                                if (!isPublic) return reply(mess.only.publikG)
+				if (isLimit(sender)) return reply(limitend(pushname2))
                 reply(mess.wait)
                 play = body.slice(9)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=${ZeksApi}`, {method: 'get'})
@@ -2839,9 +2845,10 @@ async function starts() {
                 break 
  
             case 'smule':
-	       if (isBanned) return reply(mess.only.benned)
-	       if (!isPrem) return reply(mess.only.premium)
+	       if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
+                                if (!isPublic) return reply(mess.only.publikG)
+				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return reply('Cadê o url, mano?')
 					if (!isUrl(args[0]) && !args[0].includes('c-ash.smule')) return reply(mess.error.Iv)
 					reply(mess.wait)
