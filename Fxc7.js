@@ -1666,7 +1666,7 @@ async function starts() {
 				anu = await fetchJson(`https://api.vhtear.com/igstory?query=${instor}&apikey=${VthearApi}`, {method: 'get'})
 				insta = '=========================\n'
 				for (let i of anu.result.story.itemlist) {
-				insta += `• *Usúario:* ${anu.result.owner_username}\n• *Tipo:* ${i.type}\n• *Link:* ${i.urlDownload}\n=========================\n`
+				insta += `• *Usuário:* ${anu.result.owner_username}\n• *Tipo:* ${i.type}\n• *Link:* ${i.urlDownload}\n=========================\n`
 				}
 				reply(insta.trim())
 				await limitAdd(sender)
