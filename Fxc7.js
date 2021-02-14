@@ -196,7 +196,7 @@ async function starts() {
 					userB: `Oii ${pushname2} você não está registrado. Digite\n${prefix}daftar`,
 					admin: '*Desculpe, este comando só pode ser usado por administradores do grupo!*',
 					Badmin: '*Desculpe, este comando só pode ser usado quando o bot é admin!*',
-					publikG: `*Desculpe, o bot está privado pelo proprietário*\n*Para mais detalhes, digite*\n*${prefix}infobot*`
+					publikG: `*Desculpe ${pushname2} o bot está privado, somente adms pode ativar*\n*Para mais detalhes, digite*\n*${prefix}infobot*`
 				}
 			}
 
@@ -1621,12 +1621,12 @@ async function starts() {
 					reply(mess.wait)
 					anu = await fetchJson(`https://mhankbarbar.tech/api/epbe?url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					frhan.sendMessage(from, '[ AGUARDE ] Sendo processado\n\nO link é apenas do Google, mano, então pode ser baixado', text, {quoted: mek})
+					frhan.sendMessage(from, '[ AGUARDE ] Sendo processado\n\no link é apenas do Google, mano, então pode ser baixado', text, {quoted: mek})
 					efbe = `Título: *${anu.title}*\nTamanho: *${anu.filesize}\nDipublikasikan Pada: *${anu.published}*`
 					tefbe = await getBuffer(anu.thumb)
 					frhan.sendMessage(from, tefbe, image, {quoted: mek, caption: efbe})
 					buffer = await getBuffer(anu.result)
-					frhan.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: 'Nih Gan'})
+					frhan.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: ',-,'})
 					await limitAdd(sender) 
 					break 
 			
@@ -2803,7 +2803,7 @@ async function starts() {
 					reply(mess.wait)
 					buffer = await getBuffer(anu.result.UrlVideo)
 					frhan.sendMessage(from, buff, image, {quoted: mek, caption: ytt})
-					frhan.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek, caption: 'Nih Gan'})
+					frhan.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek, caption: ',-,'})
 					await limitAdd(sender) 
 					break 
 
@@ -2821,7 +2821,7 @@ async function starts() {
 					reply(mess.wait)
 					buffer = await getBuffer(anu.result.UrlMp3)
 					frhan.sendMessage(from, buff, image, {quoted: mek, caption: yta})
-					frhan.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek, caption: 'Nih Gan'})
+					frhan.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek, caption: ',-,'})
 					await limitAdd(sender) 
 					break 
 
