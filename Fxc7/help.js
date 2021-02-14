@@ -99,7 +99,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ╭──「 *GRUPO MENU* 」
 │➻ *${prefix}antilink On/Off*
 │➻ *${prefix}welcome On/Off*
-│➻ *${prefix}grup buka/tutup*
+│➻ *${prefix}grup abrir/fechar*
 │➻ *${prefix}ownergrup*
 │➻ *${prefix}setpp*
 │➻ *${prefix}infogc*
