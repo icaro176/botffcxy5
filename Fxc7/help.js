@@ -21,6 +21,9 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │  ❌ *SPAM*
 │  ❌ *CALL*
 ╰──
+╭──
+│  *ALGUNS COMANDOS PODEM NÃO TÁ FUNCIONANDO*
+╰──
 │
 ╭──「 *SOBRE ${name}* 」
 │➻ *${prefix}report <reportar erro>*
