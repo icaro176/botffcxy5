@@ -277,7 +277,7 @@ const bottt = (prefix) => {
 return `
 \`\`\`Por enquanto, o bot só pode ser usado em grupos*
 
-Se este bot estiver em seu grupo, diga para ativar o bot por via ${prefix}bott aktif
+Se este bot estiver em seu grupo, diga para ativar o bot por via ${prefix}bott on
 `
 }
 exports.bottt = bottt
